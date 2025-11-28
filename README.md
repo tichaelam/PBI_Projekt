@@ -18,3 +18,7 @@ od Petra Ivaniuka na Kaggle.
 ## Výroba datasetu pro projekt
 - dataset vznikl prvotním vyfiltrováním zkoumaného období v datasetu Ukraine Conflict Monitor. Z datasetu Europe and Central Asia bylo od ostatních zemí vyfiltrováno
 pouze Rusko, kde byly údaje také omezeny na zkoumané období. Tyto dvě tabulky pak byly spojeny. Datová příprava a filtrace byla před nahráním do PowerBI provedena v Excelu. 
+
+## Stanovené cíle pro projekt:
+- Cílem je zodpovězení tří výzkumných otázek a jejich vizuální doprovod.
+VO1 
