@@ -21,4 +21,14 @@ pouze Rusko, kde byly údaje také omezeny na zkoumané období. Tyto dvě tabul
 
 ## Stanovené cíle pro projekt:
 - Cílem je zodpovězení tří výzkumných otázek a jejich vizuální doprovod.
-VO1 
+VO1
+
+## Popis stránek projektu
+1. Celkový přehled
+- celkové údaje, i samostatně pro útoky na území Ruska nebo na Ukrajině.
+
+## Disclaimer
+- partial completion diplomove prace, proto rozmezi dat
+- data pro drony zacala byt zadávána až v září
+## přidané metriky a colums
+
