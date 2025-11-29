@@ -1,22 +1,20 @@
 # PBI_Projekt
 - Projekt se zaměřuje na politické násilí během války na Ukrajině. Zkoumaným obdobím je začátek ruské invaze 24.2. 2022 a konec sběru dat je ke dni 19.2.2025.
-## Zadavatel/odběratel
-- zadavatelem můžou být vládní agentury, státní sektor, humanitární organizace, či informační kanály, které využijí podklady pro:
- - počet obětí války,
- - druhy politického násilí, či
- - nárůst efektivity různých typů dronů na bojišti, a to
-pro informovaná rozhodnutí například pro cílení humanitární pomoci, podklady pro nové akvizice či pro kvantitativní podpoření faktu,
-že masové vypouštění swarmů ruských dronů Shahed může znamenat nárůst fabrik na výrobu tohoto typu dronu. To například může vést k relokaci finančních zdrojů pro
-lokalizování těchto fabrik. Taková informace může být užitečná jak novinářům, tak aktérům činných v konfliktu.
+- Zadavateli mohou být vládní agentury, veřejný sektor, humanitární organizace nebo informační kanály, které mohou získané podklady využít například k analýze:
+    - počtu obětí konfliktu,
+    - druhů politického násilí, nebo
+    - rostoucí efektivity různých typů dronů na bojišti.
+- Tyto informace mohou sloužit jako podklad pro informovaná rozhodnutí, například při cílení humanitární pomoci, plánování akvizičních strategií či kvantitativním doložení skutečnosti, že masové nasazení rojů ruských dronů Shahed může signalizovat nárůst kapacit jejich výroby. To následně může vést k relokaci finančních prostředků směrem k identifikaci či monitoringu těchto výrobních zařízení.
+- Takto získané poznatky jsou užitečné nejen pro novináře, ale také pro aktéry přímo zapojené do konfliktu.
 
 ## Datové zdroje pro projekt
 1. Ukrajina: kurátorované ACLED data z projektu [Ukraine Conflict Monitor](https://acleddata.com/monitor/ukraine-conflict-monitor)
 2. Rusko: kurátorované ACLED data z datasetu [Europe and Central Asia](https://acleddata.com/region/europe-and-central-asia)
 3. Údaje o dronových a raketových útocích na Ukrajině: dataset [Massive Missile Attacks on Ukraine](https://www.kaggle.com/datasets/piterfm/massive-missile-attacks-on-ukraine)
-od Petra Ivaniuka na Kaggle.
+od Petra Ivaniuka na Kaggle
 
 ## Výroba datasetu pro projekt
-- dataset vznikl prvotním vyfiltrováním zkoumaného období v datasetu Ukraine Conflict Monitor. Z datasetu Europe and Central Asia bylo od ostatních zemí vyfiltrováno
+- Dataset vznikl prvotním vyfiltrováním zkoumaného období v datasetu Ukraine Conflict Monitor. Z datasetu Europe and Central Asia bylo od ostatních zemí vyfiltrováno
 pouze Rusko, kde byly údaje také omezeny na zkoumané období. Tyto dvě tabulky pak byly spojeny pomocí Append v Power Query. Datová příprava a filtrace byla před nahráním do PowerBI provedena v Excelu. 
 
 ## Stanovené cíle pro projekt:
@@ -29,9 +27,9 @@ pouze Rusko, kde byly údaje také omezeny na zkoumané období. Tyto dvě tabul
    - Které modely dronů a jaké druhy hlavic nejvýrazněji souvisejí s tímto trendem?
 
 ## Poznámky na konec
-- Jelikož již poskytovatel dat změnil a zpoplatnil přístup k datům, časové rozmezí dat je neintuitivní. Jedná se totiž o data sesbíraná dříve pro účely diplomové práce autora.
+- Jelikož ACLED změnil a zpoplatnil přístup k datům, časové rozmezí dat projektu je neintuitivní. Jedná se totiž o data sesbíraná dříve pro účely diplomové práce autora.
 - Výše zmíněné s sebou nese jedno omezení, a to, že se mezi sebou mohou srovnávat pouze celá čtvrtletí, nekompletními jsou totiž Q1 2022 (začátek války na konci února 2022) a Q1 2025 (konec sběru dat k 19.2.2025).
-- Jelikož je dataset Massive Missile Attacks on Ukraine manuálně doplňován nezávislým jednotlivcem, zde započal sběr dat 28.9.2022), chybí tedy údaje z prvotních měsíců války.
+- Jelikož je dataset Massive Missile Attacks on Ukraine manuálně doplňován nezávislým jednotlivcem, započal zde sběr dat dne 28.9.2022. Chybí tedy údaje z prvotních měsíců války.
 
 ## Komentář k požadavkům na projekt
 - V projektu byly vytvořeny následující metriky a kalkulované sloupce:
