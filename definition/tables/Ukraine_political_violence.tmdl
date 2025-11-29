@@ -1,0 +1,378 @@
+table Ukraine_political_violence
+	isHidden
+	lineageTag: ce65932e-264b-40d3-9cf8-121b8b471afb
+
+	column event_id_cnty
+		dataType: string
+		isHidden
+		lineageTag: 5678bd5d-86aa-4f09-8d5e-76ce5adaa5fb
+		summarizeBy: none
+		sourceColumn: event_id_cnty
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_date
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: f3422171-2ca8-4e33-b566-afb396733ead
+		summarizeBy: none
+		sourceColumn: event_date
+
+		variation Variation
+			isDefault
+			relationship: c405c0bc-20dd-44cc-a22a-665a5d4050af
+			defaultHierarchy: LocalDateTable_3bef2d9d-925e-4f5f-b539-578c5c4b5e1c.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 6880ef2c-4ce7-40c0-93bf-96f4436c3ea8
+		summarizeBy: sum
+		sourceColumn: year
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column time_precision
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 662b7fd0-f9c9-4fba-a7aa-24a76311136f
+		summarizeBy: sum
+		sourceColumn: time_precision
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column disorder_type
+		dataType: string
+		isHidden
+		lineageTag: ea4c9ee8-3f63-4c26-8a25-c7e90f47cb70
+		summarizeBy: none
+		sourceColumn: disorder_type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_type
+		dataType: string
+		isHidden
+		lineageTag: 4fe47b9c-449d-49a7-ba29-4ab80573c1bf
+		summarizeBy: none
+		sourceColumn: event_type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sub_event_type
+		dataType: string
+		isHidden
+		lineageTag: 280795c3-1755-4f72-b835-7d05a10eb280
+		summarizeBy: none
+		sourceColumn: sub_event_type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column actor1
+		dataType: string
+		isHidden
+		lineageTag: 2a51b514-00e1-43f4-8c44-f76e4267e12d
+		summarizeBy: none
+		sourceColumn: actor1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column assoc_actor_1
+		dataType: string
+		isHidden
+		lineageTag: 47f528d2-ce29-4c7e-8b95-4ac0778bdb3d
+		summarizeBy: none
+		sourceColumn: assoc_actor_1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column inter1
+		dataType: string
+		isHidden
+		lineageTag: e824e370-65d8-404b-a881-494fa0060dd5
+		summarizeBy: none
+		sourceColumn: inter1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column actor2
+		dataType: string
+		isHidden
+		lineageTag: dbb5faf2-587e-4346-9b5d-ad262b0a4a67
+		summarizeBy: none
+		sourceColumn: actor2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column assoc_actor_2
+		dataType: string
+		isHidden
+		lineageTag: 64ad090c-6eb2-43a1-b848-376abc1b9a69
+		summarizeBy: none
+		sourceColumn: assoc_actor_2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column inter2
+		dataType: string
+		isHidden
+		lineageTag: 86853b3d-7901-4e7a-81b8-dfb7abf21c7c
+		summarizeBy: none
+		sourceColumn: inter2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column interaction
+		dataType: string
+		isHidden
+		lineageTag: 073f9329-697d-447e-80bc-58f6c7b9bceb
+		summarizeBy: none
+		sourceColumn: interaction
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column civilian_targeting
+		dataType: string
+		isHidden
+		lineageTag: 697a33bb-0b03-40c8-8710-1c56c719b261
+		summarizeBy: none
+		sourceColumn: civilian_targeting
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column iso
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 1551b318-a1b8-485f-a93f-f9e18ca82a3c
+		summarizeBy: sum
+		sourceColumn: iso
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		isHidden
+		lineageTag: aa8d24d4-a785-4c18-bbcf-928f994182db
+		summarizeBy: none
+		sourceColumn: region
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		isHidden
+		lineageTag: 94e0eacc-99ae-4996-a1ec-2c244e3c7dad
+		summarizeBy: none
+		sourceColumn: country
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin1
+		dataType: string
+		isHidden
+		lineageTag: f444ee67-c7df-409d-8078-cec16d55160e
+		summarizeBy: none
+		sourceColumn: admin1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin2
+		dataType: string
+		isHidden
+		lineageTag: 7010a4bd-d6ba-4f05-9c05-b296037c7503
+		summarizeBy: none
+		sourceColumn: admin2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin3
+		dataType: string
+		isHidden
+		lineageTag: 2e80d7b8-0a1d-49c4-bff3-944cb8778f22
+		summarizeBy: none
+		sourceColumn: admin3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column location
+		dataType: string
+		isHidden
+		lineageTag: 624241ff-13fd-49ad-ba5a-619e96ac9339
+		summarizeBy: none
+		sourceColumn: location
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: double
+		isHidden
+		lineageTag: 361c2382-0a52-4922-af0a-6a1877d58cc4
+		summarizeBy: sum
+		sourceColumn: latitude
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column longitude
+		dataType: double
+		isHidden
+		lineageTag: cba588a2-4fa1-49b4-8057-a73a588e62b3
+		summarizeBy: sum
+		sourceColumn: longitude
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column geo_precision
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f4c519dc-4e19-4bfa-a887-fab85f8d8e11
+		summarizeBy: sum
+		sourceColumn: geo_precision
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source
+		dataType: string
+		isHidden
+		lineageTag: 3ffe057b-15f0-4941-a31e-2557ecd726eb
+		summarizeBy: none
+		sourceColumn: source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_scale
+		dataType: string
+		isHidden
+		lineageTag: 91dc7ed4-b534-41f9-b708-c702f538deab
+		summarizeBy: none
+		sourceColumn: source_scale
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column notes
+		dataType: string
+		isHidden
+		lineageTag: 1df04a3c-323a-4be4-8934-28bfa1ae2255
+		summarizeBy: none
+		sourceColumn: notes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column fatalities
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: ea869752-1b96-4ac3-ba6c-1767ad161331
+		summarizeBy: sum
+		sourceColumn: fatalities
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column tags
+		dataType: string
+		isHidden
+		lineageTag: f9a348e2-1544-46a5-bfea-91c05d14d1fb
+		summarizeBy: none
+		sourceColumn: tags
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column timestamp
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: f3aefccc-9da2-4bcc-9041-191870ce4308
+		summarizeBy: sum
+		sourceColumn: timestamp
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Ukraine_political_violence = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\ArcGIS_data\quarters\QX_in_fishnet\Ukraine_political_violence_final.xlsx"), null, true),
+				    List1_Sheet = Source{[Item="List1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(List1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"event_id_cnty", type text}, {"event_date", type datetime}, {"year", Int64.Type}, {"time_precision", Int64.Type}, {"disorder_type", type text}, {"event_type", type text}, {"sub_event_type", type text}, {"actor1", type text}, {"assoc_actor_1", type any}, {"inter1", type text}, {"actor2", type any}, {"assoc_actor_2", type any}, {"inter2", type any}, {"interaction", type text}, {"civilian_targeting", type any}, {"iso", Int64.Type}, {"region", type text}, {"country", type text}, {"admin1", type text}, {"admin2", type text}, {"admin3", type text}, {"location", type text}, {"latitude", type number}, {"longitude", type number}, {"geo_precision", Int64.Type}, {"source", type text}, {"source_scale", type text}, {"notes", type text}, {"fatalities", Int64.Type}, {"tags", type any}, {"timestamp", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

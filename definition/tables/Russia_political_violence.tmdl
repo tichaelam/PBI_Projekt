@@ -1,0 +1,361 @@
+table Russia_political_violence
+	isHidden
+	lineageTag: 67e1bc55-a5a1-4767-afd2-8965f8cee36c
+
+	column event_id_cnty
+		dataType: string
+		isHidden
+		lineageTag: 1def6c11-f793-4e97-8cb3-06b2819115b8
+		summarizeBy: none
+		sourceColumn: event_id_cnty
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_date
+		dataType: string
+		isHidden
+		lineageTag: 2a55e335-a051-418a-b555-7f8d4d6c23ce
+		summarizeBy: none
+		sourceColumn: event_date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: string
+		isHidden
+		lineageTag: 8ef15d01-074d-4e93-a79a-232bff188da4
+		summarizeBy: none
+		sourceColumn: year
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column time_precision
+		dataType: string
+		isHidden
+		lineageTag: 7f2e3c5b-28fe-44d9-a880-0bba12caaec8
+		summarizeBy: none
+		sourceColumn: time_precision
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column disorder_type
+		dataType: string
+		isHidden
+		lineageTag: 86359e4a-f58e-4469-bc35-011672897d69
+		summarizeBy: none
+		sourceColumn: disorder_type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_type
+		dataType: string
+		isHidden
+		lineageTag: f2ee8e86-f5fa-4ff4-ac4f-ab648ec41374
+		summarizeBy: none
+		sourceColumn: event_type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sub_event_type
+		dataType: string
+		isHidden
+		lineageTag: afe8f374-1831-4b93-9b01-88fecc4d6380
+		summarizeBy: none
+		sourceColumn: sub_event_type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column actor1
+		dataType: string
+		isHidden
+		lineageTag: 4db5ceef-51b5-41c0-8b4b-483c32cf0a7d
+		summarizeBy: none
+		sourceColumn: actor1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column assoc_actor_1
+		dataType: string
+		isHidden
+		lineageTag: 4a3b260a-f5a3-48c9-814a-aa18ed17ee96
+		summarizeBy: none
+		sourceColumn: assoc_actor_1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column inter1
+		dataType: string
+		isHidden
+		lineageTag: 5d14b225-1066-4031-ba5f-4ef2770c3fb7
+		summarizeBy: none
+		sourceColumn: inter1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column actor2
+		dataType: string
+		isHidden
+		lineageTag: 44be7534-00a5-420d-af0c-d8348b3d8258
+		summarizeBy: none
+		sourceColumn: actor2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column assoc_actor_2
+		dataType: string
+		isHidden
+		lineageTag: a51b8c46-ec87-412c-b282-07ef09c22f6a
+		summarizeBy: none
+		sourceColumn: assoc_actor_2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column inter2
+		dataType: string
+		isHidden
+		lineageTag: c21357c3-de3a-4711-8bc2-ae03db0e8f1d
+		summarizeBy: none
+		sourceColumn: inter2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column interaction
+		dataType: string
+		isHidden
+		lineageTag: aa7006bf-408d-4f42-83d4-8a6a5ddc6dc4
+		summarizeBy: none
+		sourceColumn: interaction
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column civilian_targeting
+		dataType: string
+		isHidden
+		lineageTag: a5b5f29a-7fd3-4fe4-851d-743f0775fcf1
+		summarizeBy: none
+		sourceColumn: civilian_targeting
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column iso
+		dataType: string
+		isHidden
+		lineageTag: 5ac68660-15c7-4b88-b0ad-fd393028cdfa
+		summarizeBy: none
+		sourceColumn: iso
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		isHidden
+		lineageTag: b2145c94-306c-47b4-9e76-96d55a54ad79
+		summarizeBy: none
+		sourceColumn: region
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		isHidden
+		lineageTag: 1e9ce42f-8d24-4ba8-a89d-2cbe08ade029
+		summarizeBy: none
+		sourceColumn: country
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin1
+		dataType: string
+		isHidden
+		lineageTag: a0aa617a-42d8-4f31-a34b-35473ef0f980
+		summarizeBy: none
+		sourceColumn: admin1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin2
+		dataType: string
+		isHidden
+		lineageTag: b1ffb798-a08b-4970-9866-4750c85d1555
+		summarizeBy: none
+		sourceColumn: admin2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin3
+		dataType: string
+		isHidden
+		lineageTag: 5a128402-bb06-4307-9ec6-65665650946d
+		summarizeBy: none
+		sourceColumn: admin3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column location
+		dataType: string
+		isHidden
+		lineageTag: 080f87da-3ff0-4f0b-baba-7b9560aba4d0
+		summarizeBy: none
+		sourceColumn: location
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: string
+		isHidden
+		lineageTag: db4edbc5-eea4-4fb5-9d5c-8540c3698de5
+		summarizeBy: none
+		sourceColumn: latitude
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column longitude
+		dataType: string
+		isHidden
+		lineageTag: aeb1a286-9f54-4a56-9af0-bbe63586d363
+		summarizeBy: none
+		sourceColumn: longitude
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column geo_precision
+		dataType: string
+		isHidden
+		lineageTag: cadd66ed-3ec5-4f55-8c35-e0ee4812e795
+		summarizeBy: none
+		sourceColumn: geo_precision
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source
+		dataType: string
+		isHidden
+		lineageTag: e4ff6e36-184b-4b83-aa39-1632e8914327
+		summarizeBy: none
+		sourceColumn: source
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_scale
+		dataType: string
+		isHidden
+		lineageTag: f1dd8757-f847-4cf8-804c-d531746b93ac
+		summarizeBy: none
+		sourceColumn: source_scale
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column notes
+		dataType: string
+		isHidden
+		lineageTag: a7585588-8a8a-4b06-82d4-2c9573b44cce
+		summarizeBy: none
+		sourceColumn: notes
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column fatalities
+		dataType: string
+		isHidden
+		lineageTag: 22adf16b-c91a-445b-b453-74381667c8ca
+		summarizeBy: none
+		sourceColumn: fatalities
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column tags
+		dataType: string
+		isHidden
+		lineageTag: b1f346c2-85b7-4e3a-a3cf-78b27cad35e1
+		summarizeBy: none
+		sourceColumn: tags
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column timestamp
+		dataType: string
+		isHidden
+		lineageTag: 11b24ca9-1488-4ee1-ac6c-a59c1bde4de0
+		summarizeBy: none
+		sourceColumn: timestamp
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Russia_political_violence = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\ArcGIS_data\quarters\QX_in_fishnet\Russia_political_violence.xlsx"), null, true),
+				    List1_Sheet = Source{[Item="List1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(List1_Sheet, [PromoteAllScalars=true])
+				in
+				    #"Promoted Headers"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

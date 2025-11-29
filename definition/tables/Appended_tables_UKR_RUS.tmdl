@@ -1,0 +1,318 @@
+table Appended_tables_UKR_RUS
+	lineageTag: 7282d55a-4347-44ca-9c36-390acf0ef38e
+
+	measure 'Celkový počet útoků' = COUNTROWS(Appended_tables_UKR_RUS)
+		formatString: 0
+		lineageTag: ed351537-9ba6-4d32-8d8e-f46d95b6d3ba
+
+	measure 'Počet útoků v Rusku' = CALCULATE(COUNTROWS(Appended_tables_UKR_RUS), 'Appended_tables_UKR_RUS'[country] = "Russia")
+		formatString: 0
+		lineageTag: 43e7553c-888d-4b93-a2b3-5e8fb19fc700
+
+	measure 'Počet útoků na Ukrajině' =
+			CALCULATE(
+			    COUNTROWS(Appended_tables_UKR_RUS),
+			    'Appended_tables_UKR_RUS'[Country] = "Ukraine"
+			)
+		formatString: 0
+		lineageTag: 894e14a7-56f2-4f01-a834-c9290dadd13d
+
+	measure 'Průměrný počet útoků za čtvrtletí' =
+			
+			AVERAGEX(
+			    VALUES('Appended_tables_UKR_RUS'[Čtvrtletí]),
+			    COUNTROWS('Appended_tables_UKR_RUS'))
+		lineageTag: 4137ee68-a9e0-4985-97b0-5f71c301f13a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Dronové a raketové útoky' = ```
+			
+			CALCULATE(
+			    COUNTROWS('Appended_tables_UKR_RUS'),
+			    'Appended_tables_UKR_RUS'[sub_event_type]
+			        IN {"Air/drone strike", "Shelling/artillery/missile attack"}
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 92508b53-d42b-4ec2-b390-ec99eb7cea2d
+
+	column event_id_cnty
+		dataType: string
+		lineageTag: d038d826-6ce4-4411-8ea6-33b6a303d52c
+		summarizeBy: none
+		sourceColumn: event_id_cnty
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1e54ac1e-f456-4e40-b109-09d032b744b1
+		summarizeBy: none
+		sourceColumn: event_date
+
+		variation Variation
+			isDefault
+			relationship: ec110847-8076-4970-bbbd-4feadab718d7
+			defaultHierarchy: LocalDateTable_5728c5d8-16bd-4706-bd52-5faff8be495c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column year
+		dataType: string
+		lineageTag: cafbeea0-342f-4357-ba31-59b77e1822d1
+		summarizeBy: none
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column time_precision
+		dataType: string
+		lineageTag: 4c938ab6-44fb-49de-823c-8638e32c7cab
+		summarizeBy: none
+		sourceColumn: time_precision
+
+		annotation SummarizationSetBy = Automatic
+
+	column disorder_type
+		dataType: string
+		lineageTag: e4ffd0a8-ae9a-421f-b428-3a609e8b0ae2
+		summarizeBy: none
+		sourceColumn: disorder_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_type
+		dataType: string
+		lineageTag: 352226fb-b3a2-41e2-96c1-717713fef61e
+		summarizeBy: none
+		sourceColumn: event_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column sub_event_type
+		dataType: string
+		lineageTag: c3a15298-7cf5-400e-8ad4-95bf282de464
+		summarizeBy: none
+		sourceColumn: sub_event_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column actor1
+		dataType: string
+		lineageTag: b70bddd4-6dde-45b2-b6ad-91403bb64b42
+		summarizeBy: none
+		sourceColumn: actor1
+
+		annotation SummarizationSetBy = Automatic
+
+	column assoc_actor_1
+		dataType: string
+		lineageTag: 1d6d1107-fd41-4c64-95d4-3c76b6a7277d
+		summarizeBy: none
+		sourceColumn: assoc_actor_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column inter1
+		dataType: string
+		lineageTag: 875e03f1-5ad4-49d8-b459-ae968d38092a
+		summarizeBy: none
+		sourceColumn: inter1
+
+		annotation SummarizationSetBy = Automatic
+
+	column actor2
+		dataType: string
+		lineageTag: a58dd1ea-3df9-4265-8387-c11360bc0adb
+		summarizeBy: none
+		sourceColumn: actor2
+
+		annotation SummarizationSetBy = Automatic
+
+	column assoc_actor_2
+		dataType: string
+		lineageTag: bc26af9f-af6a-490f-bcac-4d79f181b5f5
+		summarizeBy: none
+		sourceColumn: assoc_actor_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column inter2
+		dataType: string
+		lineageTag: db93ed42-420f-476e-b2dc-971184d99ea3
+		summarizeBy: none
+		sourceColumn: inter2
+
+		annotation SummarizationSetBy = Automatic
+
+	column interaction
+		dataType: string
+		lineageTag: 27860d4a-c81a-4f0c-8dd2-b3cb1e272d4b
+		summarizeBy: none
+		sourceColumn: interaction
+
+		annotation SummarizationSetBy = Automatic
+
+	column civilian_targeting
+		dataType: string
+		lineageTag: f195f4e5-d937-43ba-ae17-b896f823f4b3
+		summarizeBy: none
+		sourceColumn: civilian_targeting
+
+		annotation SummarizationSetBy = Automatic
+
+	column iso
+		dataType: string
+		lineageTag: d5ac02e9-4725-4e40-bfd4-b6de4e515eda
+		summarizeBy: none
+		sourceColumn: iso
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 18fc6b9e-844f-4bb5-b640-38fc8b94cac0
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: 737adc1e-0ef2-43a5-8d94-9c37804523d3
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin1
+		dataType: string
+		lineageTag: f0a34a4e-19dd-4ddf-8d23-9bedeea1c5fb
+		summarizeBy: none
+		sourceColumn: admin1
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin2
+		dataType: string
+		lineageTag: fc8f6855-7896-4dc6-9360-13a723c699de
+		summarizeBy: none
+		sourceColumn: admin2
+
+		annotation SummarizationSetBy = Automatic
+
+	column admin3
+		dataType: string
+		lineageTag: 26a19135-7673-4492-98a4-abafbb17bc78
+		summarizeBy: none
+		sourceColumn: admin3
+
+		annotation SummarizationSetBy = Automatic
+
+	column location
+		dataType: string
+		lineageTag: f99163e5-6c43-413f-9500-ddbafd9707b9
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = Automatic
+
+	column latitude
+		dataType: string
+		lineageTag: 6c778eb8-25c7-43a0-828b-0605103f6188
+		summarizeBy: none
+		sourceColumn: latitude
+
+		annotation SummarizationSetBy = Automatic
+
+	column longitude
+		dataType: string
+		lineageTag: ff4be9ad-a96e-46a9-99dc-c2b4a584f5a5
+		summarizeBy: none
+		sourceColumn: longitude
+
+		annotation SummarizationSetBy = Automatic
+
+	column geo_precision
+		dataType: string
+		lineageTag: bbc5b49e-d926-4786-a27a-3064b345c16c
+		summarizeBy: none
+		sourceColumn: geo_precision
+
+		annotation SummarizationSetBy = Automatic
+
+	column source
+		dataType: string
+		lineageTag: ee0f3cce-7caf-4477-be30-81de7fc5c75e
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_scale
+		dataType: string
+		lineageTag: ceee6ef5-efb2-4eeb-b784-0953d2f9a093
+		summarizeBy: none
+		sourceColumn: source_scale
+
+		annotation SummarizationSetBy = Automatic
+
+	column notes
+		dataType: string
+		lineageTag: a98a53a2-872e-4d59-bb19-f13fc00fb792
+		summarizeBy: none
+		sourceColumn: notes
+
+		annotation SummarizationSetBy = Automatic
+
+	column fatalities
+		dataType: int64
+		formatString: 0
+		lineageTag: 61f739e0-6c60-48bb-8805-2aae372c5d1d
+		summarizeBy: sum
+		sourceColumn: fatalities
+
+		annotation SummarizationSetBy = Automatic
+
+	column tags
+		dataType: string
+		lineageTag: f80f0253-b086-470b-b234-ad4ea1ee0513
+		summarizeBy: none
+		sourceColumn: tags
+
+		annotation SummarizationSetBy = Automatic
+
+	column timestamp
+		dataType: string
+		lineageTag: 4b5c0cd3-5947-4e91-91b1-7bda80c5d8d0
+		summarizeBy: none
+		sourceColumn: timestamp
+
+		annotation SummarizationSetBy = Automatic
+
+	column Čtvrtletí =
+			
+			"Q" & QUARTER('Appended_tables_UKR_RUS'[event_date]) & " " & YEAR('Appended_tables_UKR_RUS'[event_date])
+		lineageTag: 3c55704b-d900-43e2-b7f5-c892909c8e5a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Appended_tables_UKR_RUS = m
+		mode: import
+		source =
+				let
+				    Source = Table.Combine({Russia_political_violence, Ukraine_political_violence}),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"event_date", type date}, {"fatalities", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

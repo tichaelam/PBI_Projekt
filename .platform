@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Projekt_Engeto"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b75ad135-74aa-4f80-bc08-62a176c8d731"
+  }
+}

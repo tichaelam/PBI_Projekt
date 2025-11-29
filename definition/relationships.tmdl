@@ -1,0 +1,21 @@
+relationship c405c0bc-20dd-44cc-a22a-665a5d4050af
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Ukraine_political_violence.event_date
+	toColumn: LocalDateTable_3bef2d9d-925e-4f5f-b539-578c5c4b5e1c.Date
+
+relationship AutoDetected_43dc6a53-9fb0-48d8-a68c-3643ced2f867
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Ukraine_political_violence.event_id_cnty
+	toColumn: Appended_tables_UKR_RUS.event_id_cnty
+
+relationship ec110847-8076-4970-bbbd-4feadab718d7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Appended_tables_UKR_RUS.event_date
+	toColumn: LocalDateTable_5728c5d8-16bd-4706-bd52-5faff8be495c.Date
+
+relationship 52f6db37-3f42-43fd-9e75-1bdbdebe9aa5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Drone_and_missile_attack.event_date
+	toColumn: LocalDateTable_22e398d7-cb1f-4de9-b52d-809be7fe4c99.Date
+

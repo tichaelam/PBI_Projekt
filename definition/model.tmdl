@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-GB
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Russia_political_violence","Ukraine_political_violence","Appended_tables_UKR_RUS","Drone_and_missile_attack"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Russia_political_violence
+ref table Ukraine_political_violence
+ref table DateTableTemplate_b35bb594-2ce3-4d21-b75b-29b14e34cc28
+ref table LocalDateTable_3bef2d9d-925e-4f5f-b539-578c5c4b5e1c
+ref table Appended_tables_UKR_RUS
+ref table LocalDateTable_5728c5d8-16bd-4706-bd52-5faff8be495c
+ref table Drone_and_missile_attack
+ref table LocalDateTable_22e398d7-cb1f-4de9-b52d-809be7fe4c99
+
+ref cultureInfo en-US
+

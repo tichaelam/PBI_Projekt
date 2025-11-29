@@ -1,0 +1,218 @@
+table Drone_and_missile_attack
+	lineageTag: 61863453-5483-4aa7-80d9-fbbb936db057
+
+	measure 'Attack Effectiveness %' =
+			
+			DIVIDE(
+			    SUM('Drone_and_missile_attack'[destroyed]),
+			    SUM('Drone_and_missile_attack'[launched])
+			) * 100
+		lineageTag: 18e972a0-7821-48e1-bea7-cb00c9b87b31
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column event_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9a2bbb5f-0228-4dee-87ed-fe06c62587e5
+		summarizeBy: none
+		sourceColumn: event_date
+
+		variation Variation
+			isDefault
+			relationship: 52f6db37-3f42-43fd-9e75-1bdbdebe9aa5
+			defaultHierarchy: LocalDateTable_22e398d7-cb1f-4de9-b52d-809be7fe4c99.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column time_end
+		dataType: string
+		lineageTag: 8c5f4a13-6560-4715-b3ab-98b547f2541e
+		summarizeBy: none
+		sourceColumn: time_end
+
+		annotation SummarizationSetBy = Automatic
+
+	column model
+		dataType: string
+		lineageTag: 0153e798-c730-4f1f-82d9-f4babea01459
+		summarizeBy: none
+		sourceColumn: model
+
+		annotation SummarizationSetBy = Automatic
+
+	column launch_place
+		dataType: string
+		lineageTag: c0e08125-6aa0-4df0-80ae-f04346527b2b
+		summarizeBy: none
+		sourceColumn: launch_place
+
+		annotation SummarizationSetBy = Automatic
+
+	column target
+		dataType: string
+		lineageTag: cff937f8-7713-46ba-852b-f1eb747e70d4
+		summarizeBy: none
+		sourceColumn: target
+
+		annotation SummarizationSetBy = Automatic
+
+	column target_main
+		dataType: string
+		lineageTag: d4416a5c-bf16-4624-b4d5-b9677c9a7884
+		summarizeBy: none
+		sourceColumn: target_main
+
+		annotation SummarizationSetBy = Automatic
+
+	column launched
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ee1af76-9647-47ca-a52f-11a78d33150e
+		summarizeBy: sum
+		sourceColumn: launched
+
+		annotation SummarizationSetBy = Automatic
+
+	column destroyed
+		dataType: int64
+		formatString: 0
+		lineageTag: c4ba5fb2-9dab-4286-987d-f6a0d69c2b7a
+		summarizeBy: sum
+		sourceColumn: destroyed
+
+		annotation SummarizationSetBy = Automatic
+
+	column not_reach_goal
+		dataType: int64
+		formatString: 0
+		lineageTag: eefc2f69-9086-45f5-9102-10ac86efd859
+		summarizeBy: sum
+		sourceColumn: not_reach_goal
+
+		annotation SummarizationSetBy = Automatic
+
+	column still_attacking
+		dataType: int64
+		formatString: 0
+		lineageTag: 8517a297-ee59-4ca9-9eb3-21b8a958aeba
+		summarizeBy: sum
+		sourceColumn: still_attacking
+
+		annotation SummarizationSetBy = Automatic
+
+	column border_crossing
+		dataType: string
+		lineageTag: faee987c-0fa5-495b-aff0-49074f9bc41f
+		summarizeBy: none
+		sourceColumn: border_crossing
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_shahed
+		dataType: string
+		lineageTag: 58eef9fd-220f-4361-baf5-2288608aa8e2
+		summarizeBy: none
+		sourceColumn: is_shahed
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_hit_location
+		dataType: string
+		lineageTag: e55beea8-82dc-4b59-a2b8-ed2f6eae913a
+		summarizeBy: none
+		sourceColumn: num_hit_location
+
+		annotation SummarizationSetBy = Automatic
+
+	column num_fall_fragment_location
+		dataType: string
+		lineageTag: f77324ac-888e-4394-8e1f-e1cdf221e587
+		summarizeBy: none
+		sourceColumn: num_fall_fragment_location
+
+		annotation SummarizationSetBy = Automatic
+
+	column carrier
+		dataType: string
+		lineageTag: 53b567d2-ff18-41ff-8fbc-aeb1406e57dc
+		summarizeBy: none
+		sourceColumn: carrier
+
+		annotation SummarizationSetBy = Automatic
+
+	column turbojet
+		dataType: string
+		lineageTag: bdd70ffa-3512-469e-96e5-d15f64f03f1b
+		summarizeBy: none
+		sourceColumn: turbojet
+
+		annotation SummarizationSetBy = Automatic
+
+	column turbojet_destroyed
+		dataType: string
+		lineageTag: 7d6c4c63-dc87-4760-a6fe-308075e9722d
+		summarizeBy: none
+		sourceColumn: turbojet_destroyed
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'affected region'
+		dataType: string
+		lineageTag: 09da812e-d750-4f4f-93a8-a71dbdbbf1ec
+		summarizeBy: none
+		sourceColumn: affected region
+
+		annotation SummarizationSetBy = Automatic
+
+	column destroyed_details
+		dataType: string
+		lineageTag: 205ca7e3-8581-48da-aeaa-a1777fa902c0
+		summarizeBy: none
+		sourceColumn: destroyed_details
+
+		annotation SummarizationSetBy = Automatic
+
+	column launched_details
+		dataType: string
+		lineageTag: e1e4d2bc-93a1-494b-8c83-c8177d2b8cca
+		summarizeBy: none
+		sourceColumn: launched_details
+
+		annotation SummarizationSetBy = Automatic
+
+	column launch_place_details
+		dataType: string
+		lineageTag: dcda749f-13de-42db-986b-3387ea82de16
+		summarizeBy: none
+		sourceColumn: launch_place_details
+
+		annotation SummarizationSetBy = Automatic
+
+	column source
+		dataType: string
+		lineageTag: 8197197d-1928-47c4-bbbd-524ae23f43c4
+		summarizeBy: none
+		sourceColumn: source
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Drone_and_missile_attack = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\ArcGIS_data\quarters\missile_drone_attack.xlsx"), null, true),
+				    List1_Sheet = Source{[Item="List1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(List1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"event_date", type date}, {"time_end", type any}, {"model", type text}, {"launch_place", type text}, {"target", type text}, {"target_main", type any}, {"launched", Int64.Type}, {"destroyed", Int64.Type}, {"not_reach_goal", Int64.Type}, {"still_attacking", Int64.Type}, {"border_crossing", type text}, {"is_shahed", type any}, {"num_hit_location", type any}, {"num_fall_fragment_location", type any}, {"carrier", type text}, {"turbojet", type any}, {"turbojet_destroyed", type any}, {"affected region", type text}, {"destroyed_details", type text}, {"launched_details", type text}, {"launch_place_details", type text}, {"source", type text}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
