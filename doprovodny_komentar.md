@@ -8,8 +8,14 @@
 - Takto získané poznatky jsou užitečné nejen pro novináře, ale také pro aktéry přímo zapojené do konfliktu.
 
 ## Obsah repozitáře
-- .pbi složka
+- .pbi složka Projekt_Engeto.SemanticModel
+      - složka .pbi
+      - složka definition
+      - soubor .platform
+      - soubor definition.pbism
+      - soubor diagramLayout.json
 - .pbix soubor Projekt_Engeto
+- doprovodny_komentar.md
 
 ## Datové zdroje pro projekt
 1. Ukrajina: kurátorované ACLED data z projektu [Ukraine Conflict Monitor](https://acleddata.com/monitor/ukraine-conflict-monitor)
