@@ -9,11 +9,11 @@
 
 ## Obsah repozitáře
 - .pbi složka Projekt_Engeto.SemanticModel
-      - složka .pbi
-      - složka definition
-      - soubor .platform
-      - soubor definition.pbism
-      - soubor diagramLayout.json
+    - složka .pbi
+    - složka definition
+    - soubor .platform
+    - soubor definition.pbism
+    - soubor diagramLayout.json
 - .pbix soubor Projekt_Engeto
 - doprovodny_komentar.md
 
