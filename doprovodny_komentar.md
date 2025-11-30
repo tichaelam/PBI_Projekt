@@ -7,6 +7,10 @@
 - Tyto informace mohou sloužit jako podklad pro informovaná rozhodnutí, například při cílení humanitární pomoci, plánování akvizičních strategií či kvantitativním doložení skutečnosti, že masové nasazení rojů ruských dronů Shahed může signalizovat nárůst kapacit jejich výroby. To následně může vést k relokaci finančních prostředků směrem k identifikaci či monitoringu těchto výrobních zařízení.
 - Takto získané poznatky jsou užitečné nejen pro novináře, ale také pro aktéry přímo zapojené do konfliktu.
 
+## Obsah repozitáře
+- .pbi složka
+- .pbix soubor Projekt_Engeto
+
 ## Datové zdroje pro projekt
 1. Ukrajina: kurátorované ACLED data z projektu [Ukraine Conflict Monitor](https://acleddata.com/monitor/ukraine-conflict-monitor)
 2. Rusko: kurátorované ACLED data z datasetu [Europe and Central Asia](https://acleddata.com/region/europe-and-central-asia)
